@@ -1,4 +1,4 @@
-// © Copyright 2025 - Exhibiz by Designesia 
+// © Copyright 2025 - RegEvents by Designesia 
 
 jQuery(document).ready(function () {
     'use strict';				// use strict mode
