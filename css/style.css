@@ -1618,7 +1618,7 @@ footer {
 		width: 300px; /* Fixed width for all cards */
 		height: 400px; /* Fixed height for all cards */
 		margin: 10px; /* Margin for spacing between cards */
-		border: 3px solid rgb(167, 21, 169);
+		border: 3px solid rgb(158, 9, 232);
 		border-radius: 0; /* Remove rounded corners for a rectangular shape */
 		overflow: hidden;
 		background-color: transparent; /* White background for cards */
