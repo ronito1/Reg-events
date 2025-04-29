@@ -117,11 +117,100 @@
     color: #fff; /* Change text color on hover */
 }
 
+  /* Add a small custom horizontal scrollbar for the gallery container */
+  .gallery-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  }
+
+  .gallery-container::-webkit-scrollbar {
+    height: 6px; /* Set the scrollbar height */
+  }
+
+  .gallery-container::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+
+  .gallery-container::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 3px;
+  }
 
 
 
+  /* Add these styles to your stylesheet */
 
-    </style>
+/* Scrollbar customization */
+.scroll-1::-webkit-scrollbar {
+  width: 2px;
+  height: 8px;
+}
+
+.scroll-1::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #0395f0;
+}
+
+/* Container styles */
+.container-11 * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  
+}
+
+.container-11 {
+  display: flex;
+  overflow-x: scroll;
+  padding: 24px;
+  width: 100%; /* Adjust width as needed */
+  height: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-top: 24px;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.container-11 .card {
+  flex: 0 0 50%; /* Each card takes up 50% of the container */
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: transparent;
+  scroll-snap-align: start;
+}
+
+/* Card styles */
+.card .card__image {
+  flex: 1;
+  height: 400px; /* Adjust height as needed */
+  width: 700px;
+
+}
+
+.card .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding: 20px;
+}
+
+
+
+.card .card__content .card__title {
+  font-size: 30px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.card .card__content .card__describe {
+  color: #fff;
+  font-size: 14px;
+}
+
+</style>
 
 
 
@@ -282,6 +371,87 @@
 
                 </section>
 				
+<!-- section begin -->
+<section id="section-services" class="jarallax text-light">
+    <img src="images/bg/1.jpg" class="jarallax-img" alt="">
+    <div class="wm wm-border dark wow fadeInDown">Services</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                <h1>Services We Provide</h1>
+                <div class="separator"><span><i class="fa fa-square"></i></span></div>
+                <div class="spacer-single"></div>
+            </div>
+        </div>
+
+      <!-- From Uiverse.io by eduardo-amaro-maciel --> 
+<div class="container-11 scroll-1">
+    <div class="card">
+      <div class="card__image">
+        <img src="/images/team/001.jpg" alt="Image Description">
+      </div>
+      <div class="card__content">
+          <span class="card__title">Annual Day Celebrations</span>
+          <p class="card__describe">
+            Transform your company's yearly milestones into spectacular events featuring employee showcases and inspiring leadership addresses.          </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__image">
+        <img src="/images/team/001.jpg" alt="Image Description">
+     </div>
+      <div class="card__content">
+          <span class="card__title">Corporate Themed Parties</span>
+          <p class="card__describe">
+            Create unforgettable brand experiences through immersive theme parties ranging from nostalgic retro to cutting-edge futuristic concepts.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__image">
+        <img src="/images/team/004.jpg" alt="Image Description">
+      </div>
+      <div class="card__content">
+          <span class="card__title">Business Summits</span>
+          <p class="card__describe">
+            Coordinate high-level industry gatherings featuring expert speakers and networking opportunities.</p>
+        </div>
+    </div>
+  </div> 
+
+                            <!-- From Uiverse.io by eduardo-amaro-maciel --> 
+<div class="container-11 scroll-1">
+    <div class="card">
+      <div class="card__image">
+        <img src="/images/team/001.jpg" alt="Image Description">
+      </div>
+      <div class="card__content">
+          <span class="card__title">Luxury Wedding Décor</span>
+          <p class="card__describe">
+            Transform your venue with stunning floral installations, bespoke lighting, and elegant setups.</p>
+        </div>
+    </div>
+    <div class="card">
+      <div class="card__image">
+        <img src="/images/team/001.jpg" alt="Image Description">
+     </div>
+      <div class="card__content">
+          <span class="card__title">Birthday Parties</span>
+          <p class="card__describe">Celebrate life’s special moments with themed parties tailored to your style—whether it’s a whimsical kids’ party or an elegant adult soirée.</p>
+      </div>
+
+    </div>
+  </div>
+ </div> 
+           
+
+
+
+</section>
+
+
+
+
+
 
 <!-- section begin -->
 <section id="section-features">
