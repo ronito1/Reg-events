@@ -1570,102 +1570,75 @@ footer {
 	margin:0;
 	}
 
+
+/* -------------------------------------------
+
+partners
+
+------------------------------------------- */
+.mil-infinite-show {
+    overflow: hidden; /* Prevents overflow */
+}
+
+.swiper-wrapper {
+    display: flex; /* Aligns images horizontally */
+}
+
+.mil-partner-frame {
+    display: flex; /* Ensures the frame is flexible */
+    justify-content: center; /* Centers the image */
+    align-items: center; /* Vertically centers the image */
+    width: 100px; /* Fixed width for each image */
+}
+
+.mil-partner-frame img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+
 	.event-card {
-		border: 1px solid #ddd;
-		border-radius: 8px;
-		overflow: hidden;
-		margin-bottom: 20px;
-		transition: transform 0.3s;
+		display: flex; /* Use flexbox for centering */
+		flex-direction: column; /* Stack children vertically */
+		align-items: center; /* Center items horizontally */
+		justify-content: center; /* Center items vertically */
+		margin: 20px auto; /* Center the card and add margin */
+		width: 90%; /* Set a width for the card */
+		max-width: 400px; /* Set a maximum width for larger screens */
+		background-color: transparent; /* Optional: Add a background color */
+		border-radius: 10px; /* Optional: Add rounded corners */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
 	}
 	
+	.row-1 {
+		display: flex;
+		justify-content: center; /* Center the cards horizontally */
+		flex-wrap: wrap; /* Allow wrapping of cards */
+	}
+	
+
 	.event-card:hover {
 		transform: scale(1.05);
 	}
 	
 	.event-image {
-		width: 100%;
 		height: auto;
 	}
 	
 	.event-info {
-		padding: 15px;
-		background-color: #fff;
+		padding: 25px;
 	}
 	
-	.event-info h4 {
+	.event-info h3 {
 		margin: 0 0 10px;
-		font-size: 18px;
+		font-size: 30px;
 	}
 	
 	.event-info p {
 		margin: 5px 0;
-		font-size: 14px;
+		font-size: 18px;
 	}
 
-	.service-slider {
-		display: flex;
-		overflow-x: auto !important; /* Force horizontal scrolling */
-		width: 100% !important; /* Ensure it takes full width */
-		scroll-snap-type: x mandatory; /* Enable smooth snapping */
-		-webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-		transition: transform 0.5s ease; /* Smooth transition */
-		padding: 10px 0; /* Optional: Add padding for aesthetics */
-		width: 100%; /* Ensure it takes full width */
-		box-sizing: border-box; /* Include padding in width calculation */
-	}
-	
-		.service-card {
-		width: 300px; /* Fixed width for all cards */
-		height: 400px; /* Fixed height for all cards */
-		margin: 10px; /* Margin for spacing between cards */
-		border: 3px solid rgb(158, 9, 232);
-		border-radius: 0; /* Remove rounded corners for a rectangular shape */
-		overflow: hidden;
-		background-color: transparent; /* White background for cards */
-		display: flex;
-		flex-direction: column; /* Stack elements vertically */
-		align-items: center; /* Center align elements */
-		justify-content: space-between; /* Space out content evenly */
-		scroll-snap-align: start; /* Snap to the start of each card */
-
-	}
-	
-	.service-header {
-		background-color: transparent; /* Light background for header */
-		padding: 15px;
-		text-align: center;
-		width: 100%; /* Full width for header */
-	}
-	
-	.service-header h4 {
-		margin: 0;
-		font-size: 1.5em; /* Responsive font size */
-	}
-	
-	.service-header .price {
-		font-size: 1.2em; /* Responsive font size */
-		color: #28a745; /* Green color for price */
-	}
-	
-	.service-body {
-		padding: 15px;
-		text-align: center;
-		flex-grow: 1; /* Allow body to grow and fill space */
-	}
-	
-	.service-body img {
-		width: 100%; /* Ensure the image takes full width */
-		height: auto; /* Maintain aspect ratio */
-		max-height: 200px; /* Set a max height for images */
-		object-fit: cover; /* Ensure the image covers the area without distortion */
-		border-radius: 0; /* Remove rounded corners for images */
-	}
-	
-	.service-body .lead {
-		font-weight: bold;
-		margin: 10px 0;
-	}
-	
 	/* Media query for mobile view */
 	@media (max-width: 768px) {
 		.service-slider {
@@ -2534,7 +2507,7 @@ border:solid 1px #ddd;
 	}
 	h3 {
 	margin-top: 0;
-	font-size:18px;
+	font-size:23px;
 	letter-spacing:3px;
 	text-transform:uppercase;
 	margin-bottom:15px;
@@ -2678,7 +2651,7 @@ border:solid 1px #ddd;
 	
 	.text-light,
 	.text-light p{
-	color:#ddd;
+	color:#fbf9f9;
 	}
 	
 	.text-dark{
