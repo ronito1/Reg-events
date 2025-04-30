@@ -16,6 +16,73 @@
     <link rel="stylesheet" href="css/colors/magenta.css" type="text/css" id="colors">
     <link rel="stylesheet" href="animations.css" />
     <link rel="stylesheet" href="css/font-style.css" type="text/css">
+
+<style>
+ .card {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background: linear-gradient(-45deg, #53f402 0%, #03e4f0 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card svg {
+  width: 70px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover {
+  transform: rotate(-5deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card:hover svg {
+  scale: 0;
+  transform: rotate(-45deg);
+}
+</style>
+
+
+
 </head>
 
 <body id="services-page">
@@ -50,101 +117,885 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                        <h1>Services We Provide</h1>
+                        <h1>All Our Services</h1>
                         <div class="separator"><span><i class="fa fa-square"></i></span></div>
                         <div class="spacer-single"></div>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- 1 -->
+                        <div class="col-md-6">
+                            <div class="service-card animate__animated animate__fadeInUp">
+                                <div class="service-body">
+                                    <div class="service-header">
+                                    </div>
+                                    <div class="card">
+                                        <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                            <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                                        </svg>
+                                        <div class="card__content">
+                                            <p2 class="card__title">Card Title 1</p2>
+                                            <br>
+                                            <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- 2 -->
+                        <div class="col-md-6">
+                            <div class="service-card animate__animated animate__fadeInUp">
+                                <div class="service-body">
+                                    <div class="service-header">
+                                    </div>
+                                    <div class="card">
+                                        <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                            <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                                        </svg>
+                                        <div class="card__content">
+                                            <p2 class="card__title">Card Title 2</p2>
+                                            <br>
+                                            <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ <br>
+            <!-- 3 -->
+                <div class="row">
+                    <!-- First Card -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 4 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <br>
+                    <!-- 5 -->
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/003.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 3</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 6 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/004.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 4</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    <br>
+
+        <!-- 7 -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 8 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<br>
+                    <!-- 9-->
 
                 <div class="row">
                     <div class="col-md-6">
                         <div class="service-card animate__animated animate__fadeInUp">
                             <div class="service-body">
                                 <div class="service-header">
-                                    <h3>Annual Day Celebrations</h3>
                                 </div>
-                                <img src="images/team/001.jpg" class="img-responsive" alt="">
-                                <p class="service-description">Transform your company's yearly milestones into spectacular events featuring employee showcases and inspiring leadership addresses.</p>
+                                <div class="card">
+                                    <img src="images/team/003.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 3</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                
+                    <!-- 10 -->
                     <div class="col-md-6">
                         <div class="service-card animate__animated animate__fadeInUp">
                             <div class="service-body">
                                 <div class="service-header">
-                                    <h3>Corporate Themed Parties</h3>
                                 </div>
-                                <img src="images/team/002.jpg" class="img-responsive" alt="">
-                                <p class="service-description">Create unforgettable brand experiences through immersive theme parties ranging from nostalgic retro to cutting-edge futuristic concepts.</p>
+                                <div class="card">
+                                    <img src="images/team/004.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 4</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+    <br>
+            <!-- 11 -->
+
+                <div class="row">
                     <div class="col-md-6">
                         <div class="service-card animate__animated animate__fadeInUp">
                             <div class="service-body">
                                 <div class="service-header">
-                                    <h3>Festival Events</h3>
                                 </div>
-                                <img src="images/team/003.jpg" class="img-responsive" alt="">
-                                <p class="service-description">Bring cultural vibrancy to your workplace with authentic celebrations featuring traditional décor, performances, and culinary experiences.</p>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                
+                    <!-- 12 -->
                     <div class="col-md-6">
                         <div class="service-card animate__animated animate__fadeInUp">
                             <div class="service-body">
                                 <div class="service-header">
-                                    <h3>Award Shows</h3>
                                 </div>
-                                <img src="images/team/004.jpg" class="img-responsive" alt="">
-                                <p class="service-description">Recognize excellence with professionally produced ceremonies featuring red carpet moments and elegant presentation formats.</p>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+<br>
+            <!-- 13 -->
+
+                <div class="row">
                     <div class="col-md-6">
                         <div class="service-card animate__animated animate__fadeInUp">
                             <div class="service-body">
                                 <div class="service-header">
-                                    <h3>Milestone Events</h3>
                                 </div>
-                                <img src="images/team/005.jpg" class="img-responsive" alt="">
-                                <p class="service-description">Commemorate significant company achievements with carefully crafted celebrations that reflect your organizational journey.</p>
+                                <div class="card">
+                                    <img src="images/team/003.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 3</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                
+                    <!-- 14 -->
                     <div class="col-md-6">
                         <div class="service-card animate__animated animate__fadeInUp">
                             <div class="service-body">
                                 <div class="service-header">
-                                    <h3>Family Days</h3>
                                 </div>
-                                <img src="images/team/006.jpg" class="img-responsive" alt="">
-                                <p class="service-description">Foster workplace community through engaging family-oriented events with activities designed for all age groups.</p>
+                                <div class="card">
+                                    <img src="images/team/004.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 4</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+    <br>
+                    <!-- 15 -->
+
+                <div class="row">
                     <div class="col-md-6">
                         <div class="service-card animate__animated animate__fadeInUp">
                             <div class="service-body">
                                 <div class="service-header">
-                                    <h3>Exhibition Stalls & Trade Shows</h3>
                                 </div>
-                                <img src="images/team/007.jpg" class="img-responsive" alt="">
-                                <p class="service-description">Develop captivating brand displays that attract attention and facilitate meaningful customer interactions.</p>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                
+                    <!-- 16 -->
                     <div class="col-md-6">
                         <div class="service-card animate__animated animate__fadeInUp">
                             <div class="service-body">
                                 <div class="service-header">
-                                    <h3>Press Conferences</h3>
                                 </div>
-                                <img src="images/team/008.jpg" class="img-responsive" alt="">
-                                <p class="service-description">Execute polished media events with comprehensive support for messaging, technical setup, and journalist coordination.</p>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+    <br>
+
+                <!-- 17 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/003.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 3</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 18 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/004.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 4</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<br>
+                    <!-- 19 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 20 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <br>
+                    <!-- 21 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/003.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 3</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 22 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/004.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 4</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<br>
+                 <!-- 23 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--  24-->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <br>
+         <!-- 25 -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/003.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 3</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 26 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/004.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 4</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<br>
+                    <!-- 27 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 28 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <br>
+            <!-- 29 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/003.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 3</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 30 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/004.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 4</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<br>
+                    <!-- 31 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 32-->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <br>
+         <!-- 33 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/003.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 3</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 34-->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/004.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 4</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<br>
+       <!-- 35 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+       <!-- 36 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
+    <br>            
+         <!-- 37 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/003.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 3</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 38 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/004.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 4</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <br>
+
+                    <!-- 39 -->
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 40 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <br>
+
+            <!-- 41 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/003.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 3</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 42 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/004.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 4</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<br>
+                    <!-- 43 -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/001.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 1</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 44 -->
+                    <div class="col-md-6">
+                        <div class="service-card animate__animated animate__fadeInUp">
+                            <div class="service-body">
+                                <div class="service-header">
+                                </div>
+                                <div class="card">
+                                    <img src="images/team/002.jpg" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+                                    <div class="card__content">
+                                        <p2 class="card__title">Card Title 2</p2>
+                                        <br>
+                                        <p3 class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                
+
                     <!-- Add more services as needed -->
                 </div>
                 <!-- Add Pagination -->
